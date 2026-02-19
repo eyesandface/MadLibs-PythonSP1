@@ -8,20 +8,20 @@ def get_number(prompt=""):
     while True:
         try: 
             number = int(input(prompt))
-            return number
+            return number        
         except ValueError:
-            print("Please, enter a number.")
+            print("Please, enter a number.")        #liked this part, it was amazing idea to give acces only to input integer in case of numbers!
 
 def madLibs():
     print("Welcome to the game! Please, choose a template:")
-    temp_choice = input("1) The Hospital.\n2) The Camping.\n3) The Letter.\n")
+    temp_choice = input("1) The Hospital.\n2) The Camping.\n3) The Letter.\n")    #beautiful visualization of the start
     
     if temp_choice == '1':
         numbers1 = []
         print("Input 2 numbers: ")
         for i in range(2):
             n = get_number()
-            numbers1.append(n)
+            numbers1.append(n)    #very good!
         measure_of_time = get_word("Input a measure of time: ")
         mode_of_trans = get_word("Input a mode of transportation: ")        
         adjs1 = []
@@ -43,8 +43,8 @@ def madLibs():
         verb1 = get_word("Input a verb: ")
         silly_word = get_word("Input a silly word: ")
         random_num1 = random.choice(numbers1)
-        numbers1.remove(random_num1)
-        random_num2 = random.choice(numbers1)
+        numbers1.remove(random_num1)    
+        random_num2 = random.choice(numbers1) #very professional usage of an array, wow
         print(f"It was about {random_num1} {measure_of_time} ago when I arrived at the hospital in a {mode_of_trans}. The hospital is a/an {adjs1[0]} place, there are a lot of {adjs1[1]} {nouns1[0]} here. There are nurses here who have {color} {body_parts[1]}. If someone wants to come into my room I told them that they have to {verb1} first. I’ve decorated my room with {random_num2} {nouns1[1]}. Today I talked to a doctor and they were wearing a {nouns1[2]} on their {body_parts[1]}. I heard that all doctors {verb1} {nouns1[3]} every day for breakfast. The most {adjs1[2]} thing about being in the hospital is the {silly_word} {nouns1[0]}!")
 
     
@@ -116,3 +116,5 @@ def madLibs():
 
 
 madLibs()
+
+#heeey, I don't have anything to say because your code is very clear, readable, it has all the stuff asked by Tumo team and it works)) Really appreciate your work and wish you good luck in future projects!
