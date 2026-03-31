@@ -1,20 +1,32 @@
 import random
 
 def get_word(prompt=""):
-    return input(prompt)
+    while True:
+        word = input(prompt).strip()
+        if word:
+            return word
+        print("Please, enter (a) word/words")
      
-
 def get_number(prompt=""):
     while True:
         try: 
-            number = int(input(prompt))
+            inp = input(prompt).strip()
+            if inp == "":
+                raise ValueError
+            number = int(inp)
             return number
         except ValueError:
             print("Please, enter a number.")
 
 def madLibs():
     print("Welcome to the game! Please, choose a template:")
-    temp_choice = input("1) The Hospital.\n2) The Camping.\n3) The Letter.\n")
+
+    while True:
+        temp_choice = input("1) The Hospital.\n2) The Camping.\n3) The Letter.\n")
+        if temp_choice in ['1', '2', '3']:
+            break
+        else:
+            print("No template found. Please, choose 1, 2, or 3.\n")
     
     if temp_choice == '1':
         numbers1 = []
