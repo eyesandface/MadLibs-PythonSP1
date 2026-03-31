@@ -32,6 +32,6 @@ No external libraries
   Ensures the user enters a valid integer.
 * madLibs()
   Main function that:
-  Handles template selection
-  Collects user input
-  Generates and prints the story
+  - Handles template selection
+  - Collects user input
+  - Generates and prints the story
