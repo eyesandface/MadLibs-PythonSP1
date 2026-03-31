@@ -3,9 +3,9 @@ The program asks the user to input different types of words (nouns, verbs, etc.)
 
 ## Features
 Three story templates:
-• The Hospital
-• The Camping
-• The Letter
+* The Hospital
+* The Camping
+* The Letter
 Input validation
 Randomized elements for varied output
 Clear structure
@@ -26,11 +26,11 @@ No external libraries
 4. The program will generate and display a story.
 
 ## Code Structure
-• get_word(prompt)
+* get_word(prompt)
   Ensures the user enters a non-empty word.
-• get_number(prompt)
+* get_number(prompt)
   Ensures the user enters a valid integer.
-• madLibs()
+* madLibs()
   Main function that:
   Handles template selection
   Collects user input
