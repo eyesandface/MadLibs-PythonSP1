@@ -16,13 +16,10 @@ No external libraries
 
 ## How to Play
 1. Start the program.
-2. Choose a template by entering:
-   1 for Hospital  
-   2 for Camping
-   3 for Letter
+2. Choose a template by entering 1, 2, or 3.
 3. Follow the prompts:
    Enter words (nouns, verbs, adjectives, etc.)
-   Enter numbers when requested
+   Enter numbers when requested.
 4. The program will generate and display a story.
 
 ## Code Structure
